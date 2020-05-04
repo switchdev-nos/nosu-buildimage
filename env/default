@@ -1,0 +1,47 @@
+#!/bin/bash
+
+CLEAN=false
+
+# Generic options
+NOSU_VERSION=1.0.0
+NOSU_PLATFORM=mellanox
+NOSU_GIT_KERNEL="https://github.com/switchdev-nos/nosu-kernel"
+NOSU_GIT_PACKAGES="https://github.com/switchdev-nos/nosu-packages"
+NOSU_GIT_ROOTFS="https://github.com/switchdev-nos/nosu-rootfs"
+NOSU_GIT_ONIE="https://github.com/switchdev-nos/nosu-onie"
+
+# NOSU defaults
+NOSU_TIMEZONE="Europe/Moscow"
+NOSU_COMPRESS="xz"
+NOSU_HOSTNAME=mellanox
+NOSU_USERNAME=admin
+NOSU_USERPASS=admin
+NOSU_ROOTPASS=root
+
+# DEB
+DEBFULLNAME="Alexander Petrovskiy"
+DEBEMAIL="alexpe@mellanox.com"
+
+# NOSU KERNEL
+NOSU_KERNEL_VERSION="5.7.0-rc4"
+NOSU_KERNEL_LOCALVER="nosu"
+NOSU_KERNEL_SNAPSHOT="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/snapshot/linux-5.7-rc4.tar.gz"
+#NOSU_KERNEL_GIT="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+#NOSU_KERNEL_GIT_BRANCH="v5.7-rc4"
+NOSU_KERNEL_PATCHDIR="patches"
+NOSU_KERNEL_CONFIG="config/config-mlnx-default"
+
+# NOSU PACKAGES
+NOSU_PACKAGES=(
+  frr
+  iproute2
+  ifupdown2
+  vrf
+  sosreport
+)
+
+# NOSU ROOTFS
+NOSU_UBUNTU_BASE_URL="http://cdimage.ubuntu.com/ubuntu-base/releases/18.04.4/release/ubuntu-base-18.04.4-base-amd64.tar.gz"
+NOSU_FWURL="https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/mellanox"
+NOSU_FRRVER="frr-stable"
+NOSU_TLABEL=NOSU
