@@ -34,6 +34,7 @@ NOSU_KERNEL_CONFIG="config/config-mlnx-default"
 # NOSU PACKAGES
 NOSU_PACKAGES=(
   frr
+  bird
   iproute2
   ifupdown2
   vrf
