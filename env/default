@@ -3,7 +3,7 @@
 CLEAN=false
 
 # Generic options
-NOSU_VERSION=1.0.4
+NOSU_VERSION=1.0.5
 NOSU_PLATFORM=mellanox
 NOSU_GIT_KERNEL="https://github.com/switchdev-nos/nosu-kernel"
 NOSU_GIT_PACKAGES="https://github.com/switchdev-nos/nosu-packages"
@@ -23,11 +23,11 @@ DEBFULLNAME="Alexander Petrovskiy"
 DEBEMAIL="alexpe@nvidia.com"
 
 # NOSU KERNEL
-NOSU_KERNEL_VERSION="5.8.7"
+NOSU_KERNEL_VERSION="5.9.9"
 NOSU_KERNEL_LOCALVER="nosu"
-NOSU_KERNEL_SNAPSHOT="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/snapshot/linux-5.8.7.tar.gz"
+NOSU_KERNEL_SNAPSHOT="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/snapshot/linux-5.9.9.tar.gz"
 #NOSU_KERNEL_GIT="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
-#NOSU_KERNEL_GIT_BRANCH="v5.8.7"
+#NOSU_KERNEL_GIT_BRANCH="v5.9.9"
 NOSU_KERNEL_PATCHDIR="patches"
 NOSU_KERNEL_CONFIG="config/config-mlnx-default"
 
@@ -36,10 +36,13 @@ NOSU_PACKAGES=(
   frr
   bird
   iproute2
+  ethtool
   ifupdown2
+  keepalived
+  mstpd
   vrf
   sosreport
-  keepalived
+  i2c-tools
 )
 
 # NOSU ROOTFS
