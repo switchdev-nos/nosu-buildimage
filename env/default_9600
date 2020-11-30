@@ -4,7 +4,7 @@ CLEAN=false
 
 # Generic options
 NOSU_VERSION=1.0.6
-NOSU_PLATFORM=mellanox
+NOSU_PLATFORM=mellanox_9600
 NOSU_GIT_KERNEL="https://github.com/switchdev-nos/nosu-kernel"
 NOSU_GIT_PACKAGES="https://github.com/switchdev-nos/nosu-packages"
 NOSU_GIT_ROOTFS="https://github.com/switchdev-nos/nosu-rootfs"
