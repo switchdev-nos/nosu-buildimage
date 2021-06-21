@@ -3,7 +3,7 @@
 CLEAN=false
 
 # Generic options
-NOSU_VERSION=1.0.6
+NOSU_VERSION=2.0.1
 NOSU_PLATFORM=mellanox_9600
 NOSU_GIT_KERNEL="https://github.com/switchdev-nos/nosu-kernel"
 NOSU_GIT_PACKAGES="https://github.com/switchdev-nos/nosu-packages"
@@ -23,11 +23,11 @@ DEBFULLNAME="Alexander Petrovskiy"
 DEBEMAIL="alexpe@nvidia.com"
 
 # NOSU KERNEL
-NOSU_KERNEL_VERSION="5.9.11"
+NOSU_KERNEL_VERSION="5.12.12"
 NOSU_KERNEL_LOCALVER="nosu"
-NOSU_KERNEL_SNAPSHOT="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/snapshot/linux-5.9.11.tar.gz"
+NOSU_KERNEL_SNAPSHOT="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/snapshot/linux-5.12.12.tar.gz"
 #NOSU_KERNEL_GIT="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
-#NOSU_KERNEL_GIT_BRANCH="v5.9.11"
+#NOSU_KERNEL_GIT_BRANCH="v5.12.12"
 NOSU_KERNEL_PATCHDIR="patches"
 NOSU_KERNEL_CONFIG="config/config-mlnx-default"
 
@@ -42,11 +42,10 @@ NOSU_PACKAGES=(
   mstpd
   vrf
   sosreport
-  i2c-tools
 )
 
 # NOSU ROOTFS
-NOSU_UBUNTU_BASE_URL="http://cdimage.ubuntu.com/ubuntu-base/releases/18.04.5/release/ubuntu-base-18.04.5-base-amd64.tar.gz"
+NOSU_UBUNTU_BASE_URL="http://cdimage.ubuntu.com/ubuntu-base/releases/20.04/release/ubuntu-base-20.04.2-base-amd64.tar.gz"
 NOSU_FWURL="https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/mellanox"
 NOSU_FRRVER="frr-stable"
 NOSU_TLABEL=NOSU
