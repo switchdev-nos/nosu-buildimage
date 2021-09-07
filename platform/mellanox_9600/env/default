@@ -1,6 +1,5 @@
 NOSU_PACKAGES+=(
   mlnx-hw-mgmt
-  mlnx-tools
   mlnx-mft
   mlnx-firmware
   mlnx-sysinfo-snapshot
